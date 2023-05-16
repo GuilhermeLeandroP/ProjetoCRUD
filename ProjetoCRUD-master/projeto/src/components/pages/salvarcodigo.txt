@@ -1,0 +1,93 @@
+
+import styles from './Venda.module.css';
+
+import { useState,useEffect } from 'react';
+
+function Venda() {
+        //select/////////////////////////////////////////////////////////////////
+        const [data,setData] = useState([]);
+        const [qtd, setQtd] = useState([])
+        const [total, setTotal] = useState([])
+
+
+        function getProdutos(){
+          fetch(`http://localhost/ProjetoPhp/index.php`)
+         
+          .then((response) => response.json())
+          .then((responseJson)=>(
+          setData(responseJson.records)))
+          .catch((err) => console.log(err))
+      
+    
+        }
+
+        const pegarProduto = async (e) =>{
+          await fetch("http://localhost/ProjetoPhp/visualizar.php?codigo="+e)
+          .then((response) => response.json())
+          .then((responseJson)=>{
+              setData(responseJson.produto);
+          });
+      }
+
+        useEffect(()=>{
+          getProdutos();
+      })
+      
+
+
+      const [selectedItem,setSelectedItem]=useState()
+      const handleChange=(e)=>{
+      setSelectedItem(e.target.value)
+    }
+
+
+
+      //////////////////////////////////
+
+
+    return(
+    <>
+    
+        <div className={styles.divesquerdo}>
+            
+            <form>
+            <fieldset className={styles.fieldsetproduto}>
+                <label htmlFor='produto'>Produto</label>
+                <select value={selectedItem} onChange={handleChange  }>
+                    <option value="0">Selecione um produto</option>
+             {Object.values(data).map(produto=>(
+            <option  key={produto.codigo} value={produto.codigo}   >{produto.tipo} - {produto.nome} </option>
+             ))}
+        </select>
+        
+
+            </fieldset>
+            <div className={styles.selects}>
+            <fieldset className={styles.fieldset}>
+                <label htmlFor='quantidade'>Quantidade</label>
+                <input  onFocus={()=> pegarProduto(selectedItem)} type='number'  placeholder='Quantidade' name='quantidade'></input>
+            </fieldset>
+
+            <fieldset className={styles.fieldset}>
+                <label htmlFor='valorun'>valorun</label>
+                <input readOnly disabled type='number' placeholder='valor'  value={data.valor} name='valor' ></input>
+            </fieldset>
+
+            <fieldset className={styles.fieldset}>
+                <label htmlFor='total'>total</label>
+                <input type='number' placeholder='total' name='total' readOnly></input>
+
+            </fieldset>
+            </div>
+            <button type='submit' >Incluir</button>
+            </form>
+
+        </div>
+       
+    </>
+    )
+}
+
+export default Venda
+////////////////
+

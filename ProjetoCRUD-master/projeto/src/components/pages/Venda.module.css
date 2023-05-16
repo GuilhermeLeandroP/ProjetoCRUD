@@ -1,0 +1,108 @@
+.divesquerdo{
+    border-right: solid;
+    width: 50%;
+    height: 90vh ;
+    min-width: 50%;
+    max-width: 50%;
+    
+
+}
+
+.fieldsetproduto{
+    max-width: 80%;
+    margin-left: 15px ;
+    border: solid #cecece;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.labelproduto{
+    font-size: 20px;
+    border-right:#cecece solid 3px;
+    background-color: white;
+    border-radius: 8px;
+    padding:10px;
+    text-align: center;
+
+}
+
+.selects{
+    display: flex;
+    flex-direction: row;
+}
+.fieldset{
+    max-width: 80%;
+    margin-left: 15px ;
+    margin-top: 15px;
+    border: solid #cecece;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+
+.labelqtd{
+    font-size: 20px;
+    border-right:#cecece solid 3px;
+    background-color: white;
+    border-radius: 8px;
+    padding:10px;
+    text-align: center;
+    width: 100px;
+
+}
+.labelvalorun{
+    font-size: 20px;
+    border-right:#cecece solid 3px;
+    background-color: white;
+    border-radius: 8px;
+    padding:10px;
+    text-align: center;
+    width: 80px;
+}
+.labeltotal{
+    font-size: 20px;
+    border-right:#cecece solid 3px;
+    background-color: white;
+    border-radius: 8px;
+    padding:10px;
+    text-align: center;
+    width: 80px;
+    display: block;
+    margin-right: 10px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+}
+
+.botaoconcluir{
+    background-color:rgb(7, 209, 7);
+    color: white;
+    padding: 19px;
+    margin: 50px;
+    margin-left: 235px;
+    border-radius: 20px;
+}
+
+.botaoincluir{
+    background-color: rgb(7, 209, 7);
+    color: white;
+    padding: 19px;
+    margin: 50px;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+.botaoconcluir:hover {
+    color: black;
+}
+.botaoincluir:hover {
+    color: black;
+}
+
+.resposta {
+    background-color: #cecece;
+}

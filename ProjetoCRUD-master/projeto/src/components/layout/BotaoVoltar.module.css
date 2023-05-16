@@ -1,0 +1,12 @@
+.botaovoltar{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    color: black;
+    margin-left: 10px;
+    background-color: none;
+}
+.botaovoltar:hover{ 
+    background-color: rgb(81, 13, 170);
+    color: white;
+}

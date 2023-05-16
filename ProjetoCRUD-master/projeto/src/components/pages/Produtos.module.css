@@ -1,0 +1,96 @@
+table {
+    background-color: white;
+    width: 50%;
+    margin: auto ;
+    box-shadow:  1px 1.5px 7px 1px rgb(87, 86, 86);
+
+}
+th {
+    background-color: #c4d4fc;
+    color: #3e3e3e;
+    padding: 10px;
+}
+td{
+
+    text-align: center;
+}
+tr:nth-child(even){
+    background-color: rgb(235, 234, 234);
+}
+
+h1{
+    padding-left: 477px;
+    color: #3e3e3e;
+}
+button{
+    margin: 0;
+
+    margin-right: 7px;
+
+}
+.editar {
+    background-color: #f4c474;
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.visualizar {
+    background-color: #5cbc5c;
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+.apagar {
+    background-color: #dc544c;
+    color: black;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+}
+svg{
+    margin-left: 3px;
+}
+button:hover{
+    background-color: #c4d4fc;
+}
+
+.botaocadastrar{
+    background-color: #4c94bc;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 15px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    right: 0;
+    position: relative;
+}
+.botaocadastrar:hover {
+    background-color: rgb(81, 13, 170);
+    color: white;
+}
+
+.alertasuccess {
+background-color:#d1e7dd ;
+color:#0f5132 ;
+margin: 20px  ;
+border: 1px solid #badbcc;
+border-radius: 4px;
+width: 450px;
+padding: 7px;
+
+}
+.alertaerro{
+background-color:#f8d7da ;
+color:#842029 ;
+margin: 30px  ;
+width: 450px;
+margin-left: 20px;
+border: 1px solid #f5c2c7;
+border-radius: 4px;
+padding: 7px;
+
+}

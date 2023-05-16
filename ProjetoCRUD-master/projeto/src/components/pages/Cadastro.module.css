@@ -1,0 +1,62 @@
+.alertasuccess {
+background-color:#d1e7dd ;
+color:#0f5132 ;
+margin: 20px  ;
+border: 1px solid #badbcc;
+border-radius: 4px;
+width: 450px;
+padding: 7px;
+
+}
+.alertaerro{
+background-color:#f8d7da ;
+color:#842029 ;
+margin: 30px  ;
+width: 450px;
+margin-left: 20px;
+border: 1px solid #f5c2c7;
+border-radius: 4px;
+padding: 7px;
+
+}
+.titulo {
+    color: #0f5132;
+    margin-left: 0;
+    display: flex;
+
+}
+
+.inputCadastro{
+    background-color: white;
+    width: 50%;
+    margin: auto ;
+    box-shadow:  1px 1.5px 7px 1px rgb(87, 86, 86);
+}
+
+.interior{
+    margin: 20px 20px 20px 20px;
+    margin-top: 20px;
+}
+
+.botaocadastrar{
+    padding: 10px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: white;
+    border: #0f5132 solid;
+    color: #0f5132;
+}
+body{
+    background-color: #ececec;
+    
+}
+.botaocadastrar:hover{
+    background-color:#d1e7dd ;
+}
+
+.inputs{
+width: 90%;
+padding: 10px;
+margin-top: 10px;
+}
